@@ -7,9 +7,15 @@
 </head>
 <style>
 
+    @font-face{
+        font-family: Metropolis;
+        src: url(media/font/Metropolis-Thin.otf);
+        }
+
     *{
         margin: 0;
         padding: 0;
+        font-family:'Metropolis';
     }
 
     .menu{
@@ -73,11 +79,11 @@
     <div class="menu">
 
         <div class="voci">
-            <div>voce 1</div>
-            <div>voce 2</div>
-            <div>voce 3</div>
-            <div>voce 4</div>
-            <div>voce 5</div>
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Shop</div>
+            <div>Social</div>
+            <div>Contacts</div>
         </div>
 
         <div class="menuContainer">
@@ -94,36 +100,7 @@
 
     <div class="home">
         <img src="media/foto.jpeg"" alt="foto">
-        <img src="media/foto2.jpg" alt="foto">
     </div>
-
-    <!-- <div class="w3-content w3-display-container">
-        <img class="mySlides" src="media/foto.jpeg" style="width:100%">
-        <img class="mySlides" src="media/foto2.JPG" style="width:100%">
-
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-      
-      <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      </script> -->
     
 </body>
 </html>
