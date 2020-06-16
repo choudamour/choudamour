@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chou d'Amour</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu{
+        height: 100px;
+        background-color: #f7f3e4;
+        position: relative;
+    }
+
+    .logo{
+        height: 70px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .voci div {
+        cursor: pointer;
+        float: left;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .iconeD img {
+        cursor: pointer;
+        width: 30px;
+        float: right;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+
+    .home img{
+        width: 100%;
+    }
+
+    .w3-display-left {
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        transform: translate(0%,-50%);
+        width: 35px;
+        height: 35px;
+        background-color: white;
+    }
+
+    .w3-display-right {
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        transform: translate(0%,-50%);
+        width: 35px;
+        height: 35px;
+        background-color: white;
+    }
+
+</style>
+<body>
+
+    <div class="menu">
+
+        <div class="voci">
+            <div>voce 1</div>
+            <div>voce 2</div>
+            <div>voce 3</div>
+            <div>voce 4</div>
+            <div>voce 5</div>
+        </div>
+
+        <div class="menuContainer">
+            <img class="logo" src="media/logo.png" alt="logo">
+        </div>
+        
+        <div class="iconeD">
+            <img src="media/lente.png" alt="icon">
+            <img src="media/cuore.png" alt="icon">
+            <img src="media/carello.png" alt="icon">
+        </div>
+        
+    </div>
+
+  <!--  <div class="home">
+        <img src="media/foto.jpeg"" alt="foto">
+        <img src="media/foto2.jpg" alt="foto">
+    </div> -->
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="media/foto.jpeg" style="width:100%">
+        <img class="mySlides" src="media/foto2.JPG" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+    
+</body>
+</html>
