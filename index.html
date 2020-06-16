@@ -34,11 +34,18 @@
         bottom: 0;
     }
 
+
+    .active {
+        border-bottom: solid 1px black;
+    }
+
     .voci div {
         cursor: pointer;
         float: left;
         margin-top: 40px;
-        margin-left: 50px;
+        margin-left: 40px;
+        color: black;
+        font-size: 16px;
     }
 
     .iconeD img {
@@ -46,31 +53,11 @@
         width: 30px;
         float: right;
         margin-top: 30px;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     .home img{
         width: 100%;
-    }
-
-    .w3-display-left {
-        position: absolute;
-        top: 50%;
-        left: 1%;
-        transform: translate(0%,-50%);
-        width: 35px;
-        height: 35px;
-        background-color: white;
-    }
-
-    .w3-display-right {
-        position: absolute;
-        top: 50%;
-        right: 1%;
-        transform: translate(0%,-50%);
-        width: 35px;
-        height: 35px;
-        background-color: white;
     }
 
 </style>
@@ -79,7 +66,7 @@
     <div class="menu">
 
         <div class="voci">
-            <div>Home</div>
+            <div class="active">Home</div>
             <div>About Us</div>
             <div>Shop</div>
             <div>Social</div>
