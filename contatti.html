@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chou d'Amour</title>
+</head>
+<style>
+
+    @font-face{
+        font-family: Metropolis;
+        src: url(media/font/Metropolis-Thin.otf);
+        }
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:'Metropolis';
+    }
+
+    .menu{
+        height: 100px;
+        background-color: #f7f3e4;
+        position: relative;
+    }
+
+    .logo{
+        height: 70px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+
+    .active {
+        border-bottom: solid 1px black;
+    }
+
+    .voci div {
+        cursor: pointer;
+        float: left;
+        margin-top: 40px;
+        margin-left: 40px;
+        color: black;
+        font-size: 16px;
+    }
+
+    .iconeD img {
+        cursor: pointer;
+        width: 30px;
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .home img{
+        width: 100%;
+    }
+
+</style>
+<body>
+
+    <div class="menu">
+
+        <div class="voci">
+            <a href="index.html"><div>Home</div></a>
+            <a href="about.html"><div>About Us</div></a>
+            <a href="shop.html"><div>Shop</div></a>
+            <a href="social.html"><div>Social</div></a>
+            <a href="contatti.html"><div class="active">Contacts</div></a>
+        </div>
+
+        <div class="menuContainer">
+            <img class="logo" src="media/logo.png" alt="logo">
+        </div>
+        
+        <div class="iconeD">
+            <img src="media/shop.svg" alt="icon">
+            <img src="media/cuore.png" alt="icon">
+            <img src="media/lente.png" alt="icon">
+        </div>
+        
+    </div>
+
+    <div class="home">
+        inserire i contatti
+    </div>
+    
+</body>
+</html>
