@@ -153,5 +153,17 @@ ul {
 
 /* social */ 
 
+.home h3{
+    text-align: center;
+}
 
 /* contact */
+
+.containercontact{
+    text-align: center;
+}
+
+.contatti{
+    width: 40%!important;
+
+}
