@@ -153,8 +153,14 @@ ul {
 
 /* social */ 
 
-.home h3{
+.containersocial{
     text-align: center;
+    margin: 40px;
+}
+
+.containersocial img {
+    width: 40%;
+    margin: 20px;
 }
 
 /* contact */
