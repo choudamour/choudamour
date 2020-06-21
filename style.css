@@ -66,46 +66,40 @@ ul {
 .titolo{
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
     font-size: 40px;
-}
-
-.container{
-    width: 100%;
-    text-align:center;
-}
-
-.container div{
-    display: inline-block;
-    vertical-align: middle;
-} 
-
-.gs{
-    width: 33%;
-    top: 0px;
-    height: 400px;
-}
-
-.gc{
-    width: 33%;
-    height: 400px;
-}
-
-.gd{
-    width: 33%;
-    height: 400px;
-}
-
-.foto{
-    /*width: 80%!important;*/
-    height: 400px;
-    width: auto!important;
 }
 
 .testo{
     font-size: 20px;
-    width: 100%;
     text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.containerAbout{
+    width: 100%;
+    text-align:center;
+}
+
+.as{
+    display: grid;
+    float: left;
+    margin: 30px;
+    margin-left: 180px;
+}
+
+.ad{
+    display: grid;
+    float: right;
+    margin: 30px;
+    margin-right: 180px;
+}
+
+.foto{
+    margin: 20px;
+    height: 400px;
+    width: 400px!important;
 }
 
 /* shop */
